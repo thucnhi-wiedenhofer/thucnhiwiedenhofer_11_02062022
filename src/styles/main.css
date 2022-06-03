@@ -27,14 +27,58 @@ a , a:hover {
     text-decoration: none;
 }
 
-
  .container-fluid {
     max-width: 1240px;
     margin: 40px auto;
     padding-left: 0;
     padding-right: 0;
 }
+
+/*  BannerHome section  */
+h1 {
+  font-size: 48px;
+  color: #FFFFFF;
+}
  
+/*  Location section  */
+.location {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #F6F6F6; 
+    border-radius: 25px;
+}
+
+.card {
+    width: 100%;
+    max-width: 340px;
+    height: 340px;
+    background-color: #e7e7e7;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    height: 340px;
+    border-radius: 10px; 
+    object-fit: cover;   
+}
+
+.card-title {
+  color:#FFFFFF;
+  font-size: 18px;
+  position: absolute;
+  width: 60%;
+  top: 275px;
+  margin-left: 10px;
+}
+
 
 @media (min-width: 1301px) and (max-width: 1439px) {
     .container-fluid {
@@ -44,15 +88,15 @@ a , a:hover {
     
 @media (max-width: 1300px) {
     .container-fluid {
-      max-width: 1200px;
-      margin: 30px 50px
+      max-width: 940px;
+      margin: 30px auto;
     }
   }
 
   @media (max-width: 992px) {
     .container-fluid {
-      max-width: 900px;
-      margin: 20px 20px
+      max-width: 550px;
+      margin: 20px auto;
     }
     
     .navbar-brand img {
@@ -67,8 +111,8 @@ a , a:hover {
 
 @media (max-width: 576px) {
     .container-fluid {
-      max-width: 500px;
-      margin: 20px 20px;
+      max-width: 370px;
+      margin: 20px auto;
     }
     a, a:hover {
         font-size: 12px;
@@ -77,12 +121,33 @@ a , a:hover {
     .navbar-nav {
         width: 140px;
     }
-   
+    .location {
+      padding: 0;
+      background-color: #FFFFFF;
+    } 
+    
   }
 
 @media (max-width: 375px) {
     .container-fluid {
       max-width: 335px;
       margin: 20px 10px;
-    }      
+    }
+    .card {
+      max-width: 100%;
+      height: 255px;
+    }
+    .card-title {
+      top: 185px;
+    } 
+    
+  }
+
+  @media (max-width: 320px) {
+    .container-fluid {
+      max-width: 280px;
+      margin: 20px 10px;
+    }
+    
+        
   }

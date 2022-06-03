@@ -1,11 +1,16 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
 
+
 const Logement = () => {
+    const location = useLocation();
+    const data = location.state?.data;
+
     return (
-    <div>
+    <div key={data && data.id}>
         <Header/>
-        <h1>Logement</h1>
+        <h1>{ data && data.title }</h1>
     </div>
     );
 };

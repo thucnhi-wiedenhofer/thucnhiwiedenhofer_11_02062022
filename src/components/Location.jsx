@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Card from "./Card";
 
 const Location = () => {
     const [data, setData] = useState([]);
@@ -11,8 +12,12 @@ const Location = () => {
     }, []);
 
     return (
-        <div>
-            <h1>Location</h1>
+        <div className="container-fluid">
+            <div className="location">
+           {data.map((logement) => (
+                <Card key={logement.id} data={logement}/>
+            ))}                
+            </div>            
         </div>
     );
 };
