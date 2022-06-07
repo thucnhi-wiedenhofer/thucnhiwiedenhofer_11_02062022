@@ -1,0 +1,56 @@
+h2 {
+    color: #FF6060 !important;
+    font-size: 36px !important;
+}
+
+h3 {
+    color: #FF6060 !important;
+    font-size: 18px !important;
+}
+
+.badge {
+    background-color: #FF6060 !important;
+    width: 115px;
+    height: 25px;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-right: 10px;
+}
+
+.host {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.host h3 {    
+    word-wrap: break-word;
+    max-width: 110px;
+    text-align: end;
+}
+.host img {
+    width: 64px !important;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+@media (max-width: 420px) {
+    h2 {
+        font-size: 18px !important;
+    }     
+    h3 {
+        font-size: 14px !important;
+    }
+    .badge {
+        width: 84px;
+        height: 18px;
+        font-size: 10px !important;
+    }
+    .host h3{
+        font-size: 12px !important;
+        max-width: 80px;
+        margin-bottom: 0;
+    }
+    .host img {
+        width: 32px !important;
+    }
+  }

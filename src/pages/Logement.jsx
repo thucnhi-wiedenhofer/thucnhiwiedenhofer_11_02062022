@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../components/Header/Header";
+import Heading from "../components/Heading/Heading";
 
 
 const Logement = () => {
@@ -11,7 +12,8 @@ const Logement = () => {
     return (
     <div key={data && data.id}>
         <Header/>
-        <h1>{ data && data.title }</h1>
+        <Heading data={data}/>
+        
     </div>
     );
 };

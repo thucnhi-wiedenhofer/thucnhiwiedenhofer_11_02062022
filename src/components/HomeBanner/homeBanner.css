@@ -3,5 +3,32 @@
 h1 {
     font-size: 48px;
     color: #FFFFFF !important;
-  }
+    text-align: center;
+    /* title vertical center: same container height */
+    line-height: 223px !important;
+    }
    
+  .banner {
+    background-image: url("../../assets/images/banner_home.png") !important;
+    height: 223px;
+    border-radius: 25px;
+    position: relative;
+  }
+
+  @media (max-width: 576px) {
+    .banner {
+      height: 111px;
+      border-radius: 10px;  
+      background-position: 40% 100%;
+    }
+
+    h1 {
+      font-size: 24px !important;
+      line-height: 1.2 !important;
+      text-align: initial;
+      position: absolute;
+      top:50%;
+      left:40%;
+      transform: translate(-50%, -50%);
+    }
+  }

@@ -3,7 +3,7 @@ import "./homeBanner.css";
 
 const HomeBanner = () => {
     return (
-    <div className="container-fluid">        
+    <div className="container-fluid banner">        
         <h1>Chez vous, partout et ailleurs</h1>
     </div>
     );
