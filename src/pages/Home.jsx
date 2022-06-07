@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "../components/Card";
-import Header from "../components/Header";
-import HomeBanner from "../components/HomeBanner";
-import Location from "../components/Location";
+import Card from "../components/Card/Card";
+import Header from "../components/Header/Header";
+import HomeBanner from "../components/HomeBanner/HomeBanner";
+import Location from "../components/Location/Location";
 
 const Home = () => {
     return <div>

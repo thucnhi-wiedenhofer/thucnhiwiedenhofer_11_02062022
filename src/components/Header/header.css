@@ -1,0 +1,42 @@
+/*  CSS Header section  */
+
+.navbar-nav { 
+    width: 300px;
+    justify-content: space-between;
+}
+
+.active {
+    text-decoration: underline !important;
+    color: #FF6060;
+}
+
+a , a:hover {
+    color: #FF6060 !important;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none !important;
+}
+
+
+  @media (max-width: 992px) {     
+    .navbar-brand img {
+        width: 145px;
+        height: 47px;
+    }
+    .navbar-nav {
+        width: 250px;
+        flex-direction: row !important;
+    }
+  }
+
+@media (max-width: 576px) {
+    
+    a, a:hover {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .navbar-nav {
+        width: 140px;
+    }
+        
+  }
