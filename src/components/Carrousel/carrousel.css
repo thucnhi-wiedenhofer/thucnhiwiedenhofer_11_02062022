@@ -2,43 +2,115 @@
     width: 1240px;
     height: 415px;
     border-radius: 25px;
+    position: relative;
 }
 
 .carrousel img {
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     height: 415px;
     border-radius: 25px;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
+
+.chevron {
+  width: 46.68px !important;
+  height: 79.2px !important;
+  cursor: pointer;
+}
+.right {
+  left: 95% !important;
+}
+.left {
+  left: 5% !important;
+}
+.counter {
+  color: #FFFFFF !important;  
+  font-size: 18px !important;
+  font-weight: 500;
+  position: absolute;
+  right: 50%;
+  bottom: 15%
+}
+
+@media (min-width: 1301px) and (max-width: 1439px) {
+  .carrousel {
+    max-width: 1100px;  
+  }   
+  .carrousel img {
+    max-width: 1100px;
+  }  
+} 
+
+@media (max-width: 1300px) {
+  .carrousel {
+    max-width: 940px;  
+  }   
+  .carrousel img {
+    max-width: 940px;
+    top: 40%;
+  }  
+} 
+
+@media (max-width: 1200px){
+  .chevron {
+    width: 30.67px !important;
+    height: 49.8px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .carrousel {
+    max-width: 550px;  
+  }   
+  .carrousel img {
+    max-width: 550px;
+    top: 45%;
+  } 
+  .counter {
+    bottom: 10%;
+  } 
+}
+
 @media (max-width: 576px) {
-    .carrousel {
-        max-width: 370px;
-        height: 255px;
-        border-radius: 10px;
-      }
-      
-      .carrousel img {
-        max-width: 370px;
-        height: 255px;
-        border-radius: 10px;
-        top: 28%;
-      }
+  .carrousel {
+      max-width: 370px;
+      height: 255px;
+      border-radius: 10px;
+    }
+    
+    .carrousel img {
+      max-width: 370px;
+      height: 255px;
+      border-radius: 10px;
+      top: 40%;
+    }
+    .chevron {
+      width: 11.67px !important;
+      height: 19.8px !important;
+    }
 }
 
 @media (max-width: 420px) {
     .carrousel {
       max-width: 335px;  
-    }
-    
+    }    
     .carrousel img {
       max-width: 335px;
-      top: 28%;
-    }
-        
+      top: 40%;
+    }           
   }
 
-  
+  @media (max-width: 335px) {
+    .carrousel {
+      max-width: 280px;  
+    }    
+    .carrousel img {
+      max-width: 280px;
+      top: 30%;
+    }    
+  }
