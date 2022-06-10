@@ -20,15 +20,13 @@ h1 {
       height: 111px;
       border-radius: 10px;  
       background-position: 40% 100%;
+      padding: 10px;
     }
 
     h1 {
       font-size: 24px !important;
       line-height: 1.2 !important;
-      text-align: initial;
-      position: absolute;
-      top:50%;
-      left:40%;
-      transform: translate(-50%, -50%);
+      text-align: initial;      
+      margin: 20px !important;
     }
   }

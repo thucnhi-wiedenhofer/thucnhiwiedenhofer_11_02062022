@@ -1,0 +1,44 @@
+.carrousel {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+}
+
+.carrousel img {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+@media (max-width: 576px) {
+    .carrousel {
+        max-width: 370px;
+        height: 255px;
+        border-radius: 10px;
+      }
+      
+      .carrousel img {
+        max-width: 370px;
+        height: 255px;
+        border-radius: 10px;
+        top: 28%;
+      }
+}
+
+@media (max-width: 420px) {
+    .carrousel {
+      max-width: 335px;  
+    }
+    
+    .carrousel img {
+      max-width: 335px;
+      top: 28%;
+    }
+        
+  }
+
+  

@@ -1,5 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import Carrousel from "../components/Carrousel/Carrousel";
+import Description from "../components/Description/Description";
 import Header from "../components/Header/Header";
 import Heading from "../components/Heading/Heading";
 
@@ -12,8 +14,9 @@ const Logement = () => {
     return (
     <div key={data && data.id}>
         <Header/>
+        <Carrousel data={data}/>
         <Heading data={data}/>
-        
+        <Description data={data}/>
     </div>
     );
 };

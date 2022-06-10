@@ -15,6 +15,7 @@ h3 {
     font-size: 14px !important;
     font-weight: 500 !important;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .host {
@@ -33,7 +34,7 @@ h3 {
     margin-left: 15px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 576px) {
     h2 {
         font-size: 18px !important;
     }     

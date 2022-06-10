@@ -1,0 +1,6 @@
+@media (max-width: 576px) {
+    .star-rating svg {
+        width: 15px;
+        height: 15px;
+    }
+}

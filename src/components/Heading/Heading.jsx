@@ -11,7 +11,7 @@ const Heading = ({ data }) => {
             <div className="col-lg-9 col-md-12 col-sm-12">
                 <h2>{data && data.title}</h2>
                 <h3>{data && data.location}</h3>
-                <div>
+                <div className="mt-4">
                     {data.tags.map((logement, index) => (
                     <span className="badge rounded-pill" key={index}>{logement}</span>
                     ))}                                    
