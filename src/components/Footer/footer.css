@@ -1,0 +1,21 @@
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin-top: 25px;
+    color: white;
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+    .footer p {
+        font-size: 12px;
+    }
+}

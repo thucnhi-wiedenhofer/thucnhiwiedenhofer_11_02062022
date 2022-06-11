@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 const Page404 = () => {
@@ -12,7 +13,8 @@ const Page404 = () => {
                 <NavLink  to="/">
                     <p className="backHome">Retourner sur la page d'accueil</p>
                 </NavLink>
-        </div>        
+        </div>
+        <Footer/>        
     </div>
     );
 };
