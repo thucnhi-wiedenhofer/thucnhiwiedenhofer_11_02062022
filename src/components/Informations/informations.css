@@ -1,0 +1,22 @@
+#informations  .accordion-button {
+    max-width: 1023px;
+    height: 47px;
+    border-radius: 5px !important;
+    font-size: 24px !important;
+  }
+  
+#informations .accordion-body {
+    max-width: 100%;
+    border-radius: 5px;
+    font-size: 24px !important;
+  }
+
+  @media (max-width: 576px) {
+    #informations .accordion-button {    
+      font-size: 13px !important;
+    }
+    
+    #informations .accordion-body {      
+      font-size: 12px !important;
+    }
+  }

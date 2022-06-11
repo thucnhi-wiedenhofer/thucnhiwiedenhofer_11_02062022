@@ -1,0 +1,20 @@
+.banner-bis {
+    background-image: url("../../assets/images/banner_a_propos.png") !important; 
+    height: 223px;
+    border-radius: 25px; 
+    margin-top: 0 !important; 
+    background-position: 50% 100%;  
+}
+@media (max-width: 576px) {
+    .banner-bis {   
+        border-radius: 10px; 
+     }  
+}
+
+@media (max-width: 420px) {
+    .banner-bis {  
+        background-image: url("../../assets/images/banner_a_propos_mobile.png") !important;
+     }  
+  }
+
+
