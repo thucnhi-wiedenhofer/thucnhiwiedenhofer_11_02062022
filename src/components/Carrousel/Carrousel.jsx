@@ -5,6 +5,7 @@ import chevronLeft from "../../assets/images/chevron-left.svg";
 
 const Carrousel = ({data}) => {
     const totalSlides = data.pictures.length;
+    console.log(data.pictures.length);
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -14,7 +15,9 @@ const Carrousel = ({data}) => {
     const nextSlide = () => {
         setCurrentSlide( currentSlide === totalSlides -1 ? 0 : currentSlide + 1);
     };
-
+    if(totalSlides === 1){
+        return null;
+    }
     
     return (
         

@@ -3,8 +3,7 @@ import StarRating from "../StarRating/StarRating";
 import "./heading.css";
 
 const Heading = ({ data }) => {
-    console.log(data);
-
+    
     return (
     <div className="container-fluid"> 
         <div className="row">

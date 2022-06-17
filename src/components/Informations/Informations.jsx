@@ -3,10 +3,10 @@ import "./informations.css";
 
 function Informations() {
   return (
-    <div id="informations" className="container-fluid mt-3">
+    <div id="informations" className="container-fluid mt-5">
         <div className='row'>
             <div className='col-lg-1'></div>
-            <div className="col-lg-10 col-md-12 col-sm-12 mb-3"> 
+            <div className="col-lg-10 col-md-12 col-sm-12 mb-4"> 
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fiability" aria-expanded="false">
                     Fiabilité
                 </button>
@@ -19,7 +19,7 @@ function Informations() {
             <div className='col-lg-1'></div>   
         </div><div className='row'>
             <div className='col-lg-1'></div>
-            <div className="col-lg-10 col-md-12 col-sm-12 mb-3"> 
+            <div className="col-lg-10 col-md-12 col-sm-12 mb-4"> 
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#respect" aria-expanded="false">
                     Respect
                 </button>
@@ -33,7 +33,7 @@ function Informations() {
         </div> 
         <div className='row'>
             <div className='col-lg-1'></div>
-            <div className="col-lg-10 col-md-12 col-sm-12 mb-3"> 
+            <div className="col-lg-10 col-md-12 col-sm-12 mb-4"> 
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#service" aria-expanded="false">
                     Service
                 </button>
@@ -47,7 +47,7 @@ function Informations() {
         </div> 
         <div className='row'>
             <div className='col-lg-1'></div>
-            <div className="col-lg-10 col-md-12 col-sm-12 mb-3"> 
+            <div className="col-lg-10 col-md-12 col-sm-12 mb-4"> 
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#safety" aria-expanded="false">
                     Sécurité
                 </button>
