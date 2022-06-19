@@ -8,15 +8,21 @@ const Header = () => {
     <div className="navbar navbar-expand-lg">
         <div className="container-fluid">
             <span className="navbar-brand"> 
-                <img src={logo} alt="logo" width="210.32" height="68"/>        
+                <img src={logo} alt="logo" width="210" height="68"/>        
             </span>  
             <ul className="navbar-nav">
-                <NavLink to="/" className={(nav) => (nav.isActive ? "nav-item active" : "nav-item")}>
-                    <li className="nav-item">Accueil</li>                
-                </NavLink>
-                <NavLink to="/Apropos" className={(nav) => (nav.isActive ? "nav-item active" : "nav-item")}>
-                    <li className="nav-item">A propos</li>
-                </NavLink>
+                
+                <li className="nav-item">
+                    <NavLink to="/" className={(nav) => (nav.isActive ? "nav-item active" : "nav-item")}>
+                        Accueil                
+                    </NavLink>
+                </li>
+                
+                    <li className="nav-item">
+                    <NavLink to="/Apropos" className={(nav) => (nav.isActive ? "nav-item active" : "nav-item")}>
+                        A propos
+                    </NavLink>
+                </li>
             </ul>
         </div>
     </div>
