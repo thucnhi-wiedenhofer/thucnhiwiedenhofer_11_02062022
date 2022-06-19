@@ -15,26 +15,10 @@ const Carrousel = ({data}) => {
     const nextSlide = () => {
         setCurrentSlide( currentSlide === totalSlides -1 ? 0 : currentSlide + 1);
     };
-
-    const onePicture = () => {       
-              if(totalSlides > 1){
-                return(
-                    <>
-                      <img className="chevron right" src={chevronRight}  alt="précédent" 
-                onClick={ nextSlide }/>
-
-                <img className="chevron left" src={chevronLeft} alt="suivant" 
-                onClick={ previousSlide }/>  
-                    </>                    
-                );                 
-            }; 
-    };
     
-    return (
-        
+    return (        
     <div className="container-fluid">  
-        <div className="carrousel">
-            
+        <div className="carrousel">            
             {data.pictures.map((slide, index) => {
                 return (
                     <div key={index}>
@@ -45,9 +29,17 @@ const Carrousel = ({data}) => {
                 );                       
             })}              
             
-            <span className="counter">{currentSlide + 1}/{totalSlides}</span> 
-            { onePicture() };
-              
+            <span className="counter">{currentSlide + 1}/{totalSlides}</span>
+
+            { totalSlides > 1 && 
+                <> 
+                <img className="chevron right" src={chevronRight}  alt="précédent" 
+                onClick={ nextSlide }/>
+
+                <img className="chevron left" src={chevronLeft} alt="suivant" 
+                onClick={ previousSlide }/>
+                </>
+            }  
         </div>
     </div>
     );
