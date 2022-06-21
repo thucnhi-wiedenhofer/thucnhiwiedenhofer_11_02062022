@@ -1,15 +1,18 @@
 import React from "react";
 import "./header.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "./../../assets/images/logo.png";
 
 const Header = () => {
     return (
     <div className="navbar navbar-expand-lg">
         <div className="container-fluid">
-            <span className="navbar-brand"> 
-                <img src={logo} alt="logo" width="210" height="68"/>        
-            </span>  
+            <Link to="/">
+                 <span className="navbar-brand"> 
+                    <img src={logo} alt="logo" width="210" height="68"/>        
+                </span>
+            </Link>
+              
             <ul className="navbar-nav">
                 
                 <li className="nav-item">

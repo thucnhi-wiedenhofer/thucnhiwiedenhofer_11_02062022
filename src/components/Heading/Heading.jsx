@@ -16,15 +16,12 @@ const Heading = ({ data }) => {
                     ))}                                    
                 </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-sm-12">
+            <div className="profile col-lg-3 col-md-12 col-sm-12">
                 <div className="host">
                     <h3>{data && data.host.name}</h3>
                     <img src={data && data.host.picture} alt="profile avatar"/>
-                </div>
-                
-                <div className="star-rating">
-                    <StarRating data={data}/>
-                </div>
+                </div> 
+                <StarRating data={data}/>
             </div>
         </div>       
         

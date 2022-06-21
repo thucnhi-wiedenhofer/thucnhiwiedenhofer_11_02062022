@@ -9,8 +9,7 @@ const StarRating = ({ data }) => {
     const inactiveStar = 5 - starChecked;
 
     return (
-    <div className="mt-4">        
-       <div className="star-rating"> 
+    <div className="star-rating">  
        
        {[...Array(starChecked)].map((star, index) => {  
             return (                  
@@ -27,8 +26,6 @@ const StarRating = ({ data }) => {
                 </span> 
             );
         })}  
-    </div>
-       
     </div>
     );
 }; 

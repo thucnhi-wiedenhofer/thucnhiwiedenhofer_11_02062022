@@ -46,6 +46,13 @@ h3 {
         height: 18px;
         font-size: 10px !important;
     }
+
+    .profile{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
     .host h3{
         font-size: 12px !important;
         max-width: 80px;

@@ -1,6 +1,15 @@
+.star-rating {
+    margin-top: 25px;
+    display: flex;
+    justify-content: right;
+} 
+
 @media (max-width: 576px) {
     .star img {
         width: 15px;
-        height: 15px;
+        height: 15px;       
     }
+    .star-rating {
+        margin-top: 0px;
+    }    
 }
