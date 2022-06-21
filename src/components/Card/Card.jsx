@@ -1,17 +1,9 @@
 import React from "react";
 import "./card.css";
 import { Link } from "react-router-dom";
-import Logement from "../../pages/Logement";
-import Page404 from "../../pages/Page404";
 
 const Card = ({ data }) => {
-    const Error = () => {
-         if(`data && data.id`){
-            return <Logement/>
-         }
-         return <Page404/>
-    }
-
+    
     return (
     <div className="card">        
         <Link key={data && data.id} to={`/Logement/${data && data.id}`} state={{data: data}}>            
